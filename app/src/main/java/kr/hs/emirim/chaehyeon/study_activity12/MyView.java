@@ -23,6 +23,10 @@ public class MyView extends View {
         //캔버스에 사각형을 그린다.
         canvas.drawRect(100,200,300,400, paint);
 
+        //테두리만 있는 도형을 그리기 위한 준비
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setStrokeWidth( 10 );
+
         //캔버스에 원을 ㅡㄱ린다.
         canvas.drawCircle(200, 600, 100, paint);
     }
